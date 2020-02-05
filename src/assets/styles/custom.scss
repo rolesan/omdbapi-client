@@ -1,0 +1,63 @@
+/* viewport */
+$view-0: 470px;
+$view-1: 700px;
+$view-2: 1000px;
+
+/* color */
+$color-app-back: #f0f0f0;
+$color-search-back: #dddddd;
+$color-item-back: #cccccc;
+$color-item-poster: #dddddd;
+$color-paginator-back: #dddddd;
+$color-animation-loading: #333333;
+$color-info-back: #ffffff;
+$color-type-movie: #ff9900;
+$color-type-series: #009900;
+$color-type-episode: #000099;
+$color-type-game: #990000;
+$color-page-active: #555555;
+
+/* border */
+$border-panels: solid 1px #999999;
+
+/* width */
+$width-max: 1200px;
+$width-page-button: 40px;
+
+/* height */
+$height-search-panel: 40px;
+$height-paginator: 40px;
+$height-page-button: 40px;
+
+/* padding */
+$padding-info-0: 10px;
+$padding-info-1: 20px;
+
+/* shadow */
+$shadow-block: 0 0 7px rgba(0, 0, 0, 0.8);
+
+/* animation icon loading */
+.loading-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+.loading-icon:after {
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 2px solid $color-animation-loading;
+  border-color: $color-animation-loading transparent $color-animation-loading transparent;
+  animation: loading-icon 1.2s linear infinite;
+}
+@keyframes loading-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
